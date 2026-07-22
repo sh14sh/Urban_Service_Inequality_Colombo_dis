@@ -35,11 +35,11 @@
   let pickModeActive = false;
 
   const SERVICE_META = {
-    hospitals: { file: "data/hospitals.geojson", color: "#D7263D", label: "Hospitals" },
-    schools:   { file: "data/schools.geojson",   color: "#3B82C4", label: "Schools" },
-    banks:     { file: "data/banks.geojson",     color: "#E8C93D", label: "Banks" },
-    parks:     { file: "data/parks.geojson",     color: "#4FA85C", label: "Parks" },
-    busstops:  { file: "data/busstops.geojson",  color: "#9B6FD1", label: "Bus Stops" },
+    hospitals: { file: "data/Hospitals.geojson", color: "#D7263D", label: "Hospitals" },
+    schools:   { file: "data/Schools.geojson",   color: "#3B82C4", label: "Schools" },
+    banks:     { file: "data/Banks.geojson",     color: "#E8C93D", label: "Banks" },
+    parks:     { file: "data/Parks.geojson",     color: "#4FA85C", label: "Parks" },
+    busstops:  { file: "data/Bus_stops.geojson",  color: "#9B6FD1", label: "Bus Stops" },
   };
 
   const FEEDBACK_SERVICE_COLOR = {
@@ -134,7 +134,7 @@
   }
 
   function loadGnDivisions() {
-    return fetch("data/gn_divisions.geojson")
+    return fetch("data/GND_layer_n.geojson")
       .then(r => r.json())
       .then(fc => {
         gnLayer = L.geoJSON(fc, {
