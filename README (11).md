@@ -9,10 +9,10 @@ community feedback system — all client-side, no server framework required.
 
 ```
 webgis/
-├── index.html              Page structure (header, sidebars, map, feedback panel)
-├── style.css               All styling / design tokens
-├── config.js                ⭐ Paste your Google Form + Apps Script URLs here
-├── script.js                Application logic (map, layers, search, feedback)
+├── index_n.html              Page structure (header, sidebars, map, feedback panel)
+├── style_n.css               All styling / design tokens
+├── config_n.js                ⭐ Paste your Google Form + Apps Script URLs here
+├── script_n.js                Application logic (map, layers, search, feedback)
 ├── Code.gs                  Google Apps Script — publishes Sheet as JSON API
 ├── APPS_SCRIPT_SETUP.md      Step-by-step Apps Script deployment guide
 ├── generate_data.py         Script used to generate the sample GeoJSON (optional, not needed at runtime)
